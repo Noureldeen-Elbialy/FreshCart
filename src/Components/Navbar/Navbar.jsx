@@ -24,22 +24,22 @@ export default function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {userToken !== null ? <>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/freshcart/">Home</Link>
+                                <Link className="nav-link" to="/freshcart">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/cart">Cart</Link>
+                                <Link className="nav-link" to="/freshcart/cart">Cart</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/products">Products</Link>
+                                <Link className="nav-link" to="/freshcart/products">Products</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/categories">Categories</Link>
+                                <Link className="nav-link" to="/freshcart/categories">Categories</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/brands">Brands</Link>
+                                <Link className="nav-link" to="/freshcart/brands">Brands</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/wishes">WishList<i className="fa-regular fa-heart mx-1"></i></Link>
+                                <Link className="nav-link" to="/freshcart/wishes">WishList<i className="fa-regular fa-heart mx-1"></i></Link>
                             </li>
                             
                         </>:''}

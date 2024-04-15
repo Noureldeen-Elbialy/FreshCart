@@ -9,7 +9,7 @@ export default function CashOrder() {
     async function handelSubmit(values) {
         let response = await cashOrder(values, cartId);
         if (response.data.status === "success") {
-            navigate('/allorders')
+            navigate('/freshcart/allorders')
         }
     }
     let formik = useFormik({

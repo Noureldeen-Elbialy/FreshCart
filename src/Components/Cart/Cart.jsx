@@ -57,8 +57,8 @@ export default function Cart() {
                 </div>)}
                 <h3 className="h5 text-main">Total Cart Price : {cartDetails.data.totalCartPrice} EGP</h3>
                 <div className=" d-flex justify-content-evenly mt-3">
-                    <Link  to={'/address'} className="btn bg-main text-white w-25">Buy Online</Link>
-                    <Link  to={'/cashorder'} className="btn bg-main text-white w-25">Cash Order</Link>
+                    <Link to={'/freshcart/address'} className="btn bg-main text-white w-25">Buy Online</Link>
+                    <Link to={'/freshcart/cashorder'} className="btn bg-main text-white w-25">Cash Order</Link>
                 </div>
             </> : <div className="d-flex justify-content-center">
                 <BallTriangle
