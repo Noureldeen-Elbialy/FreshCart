@@ -22,7 +22,7 @@ import Wishes from './Components/Wishes/Wishes';
 
 let routers = createBrowserRouter([
   {
-    path: '/', element: <Layout />, children: [
+    path: 'freshcart', element: <Layout />, children: [
       { index: true, element: <ProtectedRoute><Home /></ProtectedRoute> },
       { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
       { path: 'products', element: <ProtectedRoute><Products /></ProtectedRoute> },
@@ -33,7 +33,7 @@ let routers = createBrowserRouter([
       { path: 'address', element: <ProtectedRoute><Address /></ProtectedRoute> },
       { path: 'allorders', element: <ProtectedRoute><Allorders /></ProtectedRoute> },
       { path: 'cashorder', element: <ProtectedRoute><CashOrder /></ProtectedRoute> },
-      { path: 'wishes', element: <ProtectedRoute><Wishes/></ProtectedRoute> },
+      { path: 'wishes', element: <ProtectedRoute><Wishes /></ProtectedRoute> },
       { path: 'productdetails/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
       { path: '*', element: <Notfound /> }
     ]
