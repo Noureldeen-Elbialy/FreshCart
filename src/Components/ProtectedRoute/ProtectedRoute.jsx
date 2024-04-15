@@ -7,6 +7,6 @@ export default function ProtectedRoute(props) {
         return props.children;
     }
     else {
-        return <Navigate to={'/login'} />
+        return <Navigate to={'freshcart/login'} />
     }
 }
