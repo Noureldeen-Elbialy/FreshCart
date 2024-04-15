@@ -79,7 +79,7 @@ export default function FeatureProducts() {
                                 <div onClick={() => { addWish(product.id) }} className='position-absolute love-btn top-0 end-0 m-1 fs-4'>
                                     <i className="fa-regular fa-heart"></i>
                                 </div>
-                                <Link to={`/productdetails/${product.id}`}>
+                                <Link to={`/freshcart/productdetails/${product.id}`}>
                                     <img src={product.imageCover} className="w-100" alt={product.title} />
                                     <div className="d-flex justify-content-between align-items-center mt-2">
                                         <p className="text-main mb-0">{product.category.name}</p>

@@ -34,7 +34,7 @@ export default function Login() {
             setIsLoading(false);
             localStorage.setItem('userToken', data.token);
             setUserToken(data.token);
-            navigate('/');
+            navigate('/freshcart/');
         }
     }
 

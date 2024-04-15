@@ -11,7 +11,7 @@ export default function Navbar() {
     function logOut() {
         localStorage.removeItem('userToken');
         setUserToken(null);
-        navigate('/login');
+        navigate('/freshcart/login');
     }
     return <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -61,10 +61,10 @@ export default function Navbar() {
                         </> :
                             <>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/login">Login</Link>
+                                    <Link className="nav-link" to="login">Login</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/register">Register</Link>
+                                    <Link className="nav-link" to="register">Register</Link>
                                 </li>
                             </>}
                         
