@@ -39,7 +39,7 @@ export default function Register() {
         )
         if (data.message === "success") {
             setIsLoading(false);
-            navigate('/login');
+            navigate('/freshcart/login');
         }
     }
 
